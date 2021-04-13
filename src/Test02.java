@@ -10,7 +10,7 @@ public class Test02 {
 			com[i] = (int)(Math.random()*9) + 1;
 			for(int j=0; j<i; ++j) {
 				if (com[i] == com[j]) {
-					i--;
+					i--; 
 					break;
 				}
 			}
