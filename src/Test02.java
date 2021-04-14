@@ -1,13 +1,12 @@
 //숫자를 입력받아서 컴퓨터가 랜덤으로 뽑은 중복되지 않은 3가지 숫자 순서까지 를 맞춰라
 
 import java.io.*;
-
 public class Test02 {
 	public static void main(String[] args) throws IOException {
 		
-		int com[] = new int[3];
+		int com[] = new int[3]; //세자리 숫자를 배열에 저장함
 		for(int i=0; i<com.length; ++i) {
-			com[i] = (int)(Math.random()*9) + 1;
+			com[i] = (int)(Math.random()*9) + 1; //1부터 9까지
 			for(int j=0; j<i; ++j) {
 				if (com[i] == com[j]) {
 					i--; 

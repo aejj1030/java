@@ -7,9 +7,9 @@
 public class Test01 {
 	public static void main(String[] args) {
 		int arr[][] = new int[5][5];
-		int co = 1;
-		
+		int co = 1; //1-25값을 저장할곳
 		int i = 0;
+		//i%2 == 0 은 짝수 i%2 == 1은 홀수
 		while(true) {
 			if (i%2==0) {
 				for(int j=0; j<=4; ++j) {
@@ -25,6 +25,7 @@ public class Test01 {
 			i++;
 			if (i>4) break;
 		}
+		//출력문
 		
 		for(i=0; i<5; ++i) {
 			for(int j=0; j<5; ++j) {
